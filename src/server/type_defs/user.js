@@ -1,6 +1,6 @@
-import { gql } from 'apollo-server-express'
+import { gql } from 'apollo-server-express';
 
-export const user = gql`
+const User = gql`
 type user {
     id: Int
     email: String
@@ -27,3 +27,5 @@ type Mutation {
   refreshToken: refreshTokenResponse
 }
 `;
+
+export default User;
